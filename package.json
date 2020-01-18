@@ -1,0 +1,31 @@
+{
+  "name": "mint",
+  "version": "1.0.0",
+  "description": "Software project documentation and styleguide",
+  "main": "dist/mint.js",
+  "types": "dist/mint.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --config webpack.dev.js",
+    "build": "webpack --config webpack.dev.js",
+    "build-prod": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jim-y/mint.git"
+  },
+  "author": "attila.kling@gmail.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jim-y/mint/issues"
+  },
+  "homepage": "https://github.com/jim-y/mint#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  }
+}
