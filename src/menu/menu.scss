@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.mint__menu {
+    position: sticky;
+    top: 1.5rem;
+    width: $menu__width;
+    padding: 0 0 20px 20px;
+
+    & > nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    & > nav .mint-menu__button {
+        margin-bottom: 5px;
+    }
+
+    header {
+        color: #94d3ac;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}

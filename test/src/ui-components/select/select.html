@@ -1,0 +1,4 @@
+<select class="c-select" ng-model="$ctrl.selection" ng-change="$ctrl.onSelect()">
+    <option value="">None</option>
+    <option ng-repeat="item in $ctrl.items">{{ item }}</option>
+</select>
