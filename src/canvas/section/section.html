@@ -1,0 +1,17 @@
+<section class="mint__section section">
+  <div class="container">
+    <h1 class="title">{{ $ctrl.title }}</h1>
+    <h2 class="subtitle" ng-if="$ctrl.subtitle">{{ $ctrl.subtitle }}</h2>
+    <div class="content" ng-transclude></div>
+  </div>
+</section>
+
+<!-- <div class="tile is-parent">
+        <article class="tile is-child">
+          <p class="title">{{ $ctrl.title }}</p>
+          <p class="subtitle">Aligned with the right tile</p>
+          <div class="content">
+            Content
+          </div>
+        </article>
+      </div> -->

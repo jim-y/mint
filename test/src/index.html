@@ -1,8 +1,37 @@
-<html ng-app>
+<html ng-app="mint-test">
+
 <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
 </head>
-<body>
-    
+
+<body ng-controller="AppController as $app">
+  <mint>
+    <mint-menu title="Styleguide">
+        <mint-menu-button for="checkbox">Checkboxes</mint-menu-button>
+        <mint-menu-button for="dropdown">Dropdowns</mint-menu-button>
+        <mint-menu-button for="list">Lists</mint-menu-button>
+        <mint-menu-button for="directive">Directives</mint-menu-button>
+        <mint-menu-button for="table">Tables</mint-menu-button>
+        <mint-menu-button for="buttons">Buttons</mint-menu-button>
+    </mint-menu>
+    <mint-canvas>
+        <mint-section id="checkbox" title="Checkboxes"></mint-section>
+        <mint-section id="dropdown" title="Dropdowns">
+          <div class="c-content">
+              <div c-select items="$app.items" on-select="$app.onCoffeeSelected(selection)"></div>
+              <span>{{ $app.selected }}</span>
+          </div>
+        </mint-section>
+        <mint-section id="list" title="Lists"></mint-section>
+        <mint-section id="directive" title="Custom Directives"></mint-section>
+        <mint-section id="table" title="Tables"></mint-section>
+        <mint-section id="buttons" title="Buttons" subtitle="Showcasing the various button variants">
+            <button class="button is-danger">Simple button</button>
+        </mint-section>
+    </mint-canvas>
+  </mint>
 </body>
+
 </html>
